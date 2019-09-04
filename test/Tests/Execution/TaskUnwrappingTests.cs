@@ -49,15 +49,15 @@ namespace Tests.Execution
                 Task.FromResult(new Connection<Holder>
                 {
                     Edges = new List<Edge<Holder>>
+                    {
+                        new Edge<Holder>
+                        {
+                            Cursor = Cursor.New<Holder>(0),
+                            Node = new Holder
                             {
-                            new Edge<Holder>
-                            {
-                                Cursor = Cursor.New<Holder>(0),
-                                Node = new Holder
-                                {
-                                }
                             }
-                            },
+                        }
+                    },
                     PageInfo = new PageInfo
                     {
                         EndCursor = Cursor.New<Holder>(0),
@@ -77,15 +77,15 @@ namespace Tests.Execution
                 Task.FromResult(new Connection<Holder>
                 {
                     Edges = new List<Edge<Holder>>
+                    {
+                        new Edge<Holder>
+                        {
+                            Cursor = Cursor.New<Holder>(0),
+                            Node = new Holder
                             {
-                            new Edge<Holder>
-                            {
-                                Cursor = Cursor.New<Holder>(0),
-                                Node = new Holder
-                                {
-                                }
                             }
-                            },
+                        }
+                    },
                     PageInfo = new PageInfo
                     {
                         EndCursor = Cursor.New<Holder>(0),
