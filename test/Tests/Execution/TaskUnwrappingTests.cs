@@ -79,7 +79,7 @@ namespace Tests.Execution
 
         private class BugReproQueryTaskSecond
         {
-            public Task<Broken> ZName() => Task.FromResult(new Broken()); // Changes the name of the method to 'Broken' and it will work...
+            public Task<Broken> ZName() => Task.FromResult(new Broken()); // Alpabetic ordering of fields matters for this test!
 
             public Task<Connection<Holder>> Holders() =>
                 Task.FromResult(new Connection<Holder>
